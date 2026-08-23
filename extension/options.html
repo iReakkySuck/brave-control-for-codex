@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brave Control settings</title>
+  <style>
+    body { max-width: 680px; margin: 40px auto; padding: 0 20px; font: 15px/1.5 system-ui, sans-serif; color: #18181b; }
+    label { display: block; margin: 18px 0 6px; font-weight: 700; }
+    input { box-sizing: border-box; width: 100%; padding: 10px; border: 1px solid #a1a1aa; border-radius: 7px; font-family: ui-monospace, monospace; }
+    button { margin-top: 18px; padding: 10px 16px; border: 0; border-radius: 7px; color: white; background: #fb542b; font-weight: 700; cursor: pointer; }
+    #message { margin-left: 12px; }
+    .note { padding: 12px; border-left: 4px solid #fb542b; background: #fff7ed; }
+  </style>
+</head>
+<body>
+  <h1>Brave Control pairing</h1>
+  <p class="note">The bridge uses mutual challenge-response authentication on this computer. Keep the pairing token private and change it only when you also update the bridge configuration.</p>
+  <label for="port">Local bridge port</label>
+  <input id="port" type="number" min="1024" max="65535">
+  <label for="token">Pairing token</label>
+  <input id="token" type="password" autocomplete="off" spellcheck="false">
+  <button id="save">Save and reconnect</button><span id="message"></span>
+  <h2>Website approvals</h2>
+  <p>Brave Control records exact origins approved for site-by-site mode. Cross-site access is session-only. Clearing approvals removes both forms of website access and requires fresh approval on enabled tabs.</p>
+  <button id="clearSites" type="button">Clear website access</button><span id="clearMessage"></span>
+  <script src="options.js"></script>
+</body>
+</html>

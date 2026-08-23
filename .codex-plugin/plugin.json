@@ -1,0 +1,37 @@
+{
+  "name": "brave-control",
+  "version": "0.3.5-beta.2",
+  "description": "Explicit-tab control of Brave through a mutually authenticated localhost Codex bridge.",
+  "author": {
+    "name": "Harrison Evens"
+  },
+  "license": "MIT",
+  "keywords": [
+    "brave",
+    "browser",
+    "automation",
+    "local"
+  ],
+  "mcpServers": "./.mcp.json",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Brave Control",
+    "shortDescription": "Fast, secure control for chosen Brave tabs",
+    "longDescription": "A beta, mutually authenticated localhost bridge and control skill that lets Codex inspect and operate only the Brave tabs you explicitly enable, with compact snapshots, optional session-scoped cross-site control, and browser-grade input.",
+    "developerName": "Harrison Evens",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Inspect my enabled Brave tab.",
+      "Navigate the enabled Brave tab.",
+      "Help me complete this page in Brave."
+    ],
+    "brandColor": "#FB4511",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/logo.png"
+  }
+}

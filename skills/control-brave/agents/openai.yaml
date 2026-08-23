@@ -1,0 +1,4 @@
+interface:
+  display_name: "Control Brave"
+  short_description: "Operate your connected Brave browser"
+  default_prompt: "Use Brave Control to work in my Brave browser."

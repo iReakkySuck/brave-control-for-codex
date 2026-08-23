@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "brave_control": {
+      "command": "powershell",
+      "args": ["-NoProfile", "-NonInteractive", "-ExecutionPolicy", "Bypass", "-File", "./scripts/launch-server.ps1"],
+      "cwd": ".",
+      "enabled": true,
+      "env_vars": ["PATH"],
+      "startup_timeout_sec": 10,
+      "tool_timeout_sec": 30
+    }
+  }
+}
